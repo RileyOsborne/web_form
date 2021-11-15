@@ -17,4 +17,4 @@ $paidAfterDays = isset($_POST['paid-after-days']) ? $_POST['paid-after-days'] : 
 // die(var_dump($chargeType));
 // echo "</pre>";
 
-require 'index.view.php';
+require 'index/index.view.php';

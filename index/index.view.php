@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="index.css" rel="stylesheet">
+  <link href="index/index.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="index.js"></script>
+  <script src="index/index.js"></script>
 </head>
 <body class="bg-light">
   <div class="container mb-5">
 
     <div class="row">
       <div class="p-2 col-12 d-flex flex-column justify-content-center align-items-center">
-        <img class="m-3" src="logo.jpg">
+        <img class="m-3" src="index/logo.jpg">
         <h2 class="font-weight-bold m-2">Add invoice details</h2>
         <h6 class="text-muted m-2">Rentgroove will generate the invoices automatically</h6>
       </div>
@@ -20,7 +20,7 @@
       <form id="charge-form" name="charge-form" role="form" method="POST" class="p-2 col-12 bg-white card shadow row d-flex justify-content-center align-items-center">
 
         <div class="m-1 row col-10">
-          <h6 class="text-muted">Type</h6>
+          <h6 class="text-muted mt-3">Type</h6>
           <div class="btn-group" role="group">
             <input type="radio" class="btn-check" name="charge-type" id="recurring" value="recurring" autocomplete="off" <?= $chargeType == "recurring" ? "checked" : ""?>>
             <label class="btn btn-outline-primary shadow-none" for="recurring">Recurring charge</label>
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div class="m-2 row col-10">
+        <div class="m-3 row col-10">
           <div class="input-group" role="group">
             <span class="input-group-text">$</span>
             <input type="number" class="form-control" id="paid-in-full-amount" name="paid-in-full-amount" placeholder="<?= $paidInFullAmount ?>">
@@ -104,7 +104,7 @@
           </div>
         </div>
 
-        <div class="m-2 row col-10">
+        <div class="m-3 row col-10">
           <div class="input-group" role="group">
             <span class="input-group-text">$</span>
             <input type="number" class="form-control" id="paid-after-amount" name="paid-after-amount" placeholder="<?= $paidAfterAmount ?>">
