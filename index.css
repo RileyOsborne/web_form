@@ -1,0 +1,45 @@
+img {
+  width: 150px;
+  height: auto;
+}
+
+.container {
+  max-width: 33%;
+}
+
+.btn-outline-primary {
+  color: #7e8187;
+  font-weight: bold;
+  border: 1px solid #ced4da;
+}
+
+.btn-outline-primary:hover, .btn-check:checked+.btn-outline-primary {
+  color: #1fa69b;
+  background-color: white !important;
+  border: 1px solid #1fa69b !important;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-outline-success {
+  color: #1fa69b;
+  background-color: white !important;
+  border: 1px solid #1fa69b !important;
+}
+
+.btn-outline-success:hover {
+  color: white;
+  background-color: #1fa69b !important;
+  border: 1px solid #1fa69b !important;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:visited {
+  color: #007bff;
+}
