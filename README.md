@@ -8,7 +8,7 @@
 
 ## Application use and information
 
-The application will load a simple web form that uses HTML, CSS, jQuery, and PHP to allow for submition and data persistence
+The application will load a simple web form that uses HTML, CSS, jQuery, and PHP to allow for submission and data persistence
 
 The styling was largely handled with Bootstrap with some custom CSS and the confirmation modal was done using Sweet Alert 2
 
