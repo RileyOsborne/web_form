@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Get the POST value of the form fields to populate the view
+ * with the data after a form submit
+ */
+
 $chargeType = isset($_POST['charge-type']) ? $_POST['charge-type'] : '';
 $chargeTitle = isset($_POST['charge-title']) ? $_POST['charge-title'] : '';
 $chargeDescription = isset($_POST['charge-description']) ? $_POST['charge-description'] : '';
@@ -13,8 +18,6 @@ $paidInFullDays = isset($_POST['paid-in-full-days']) ? $_POST['paid-in-full-days
 $lateFee = isset($_POST['late-fee']) ? $_POST['late-fee'] : '';
 $paidAfterAmount = isset($_POST['paid-after-amount']) ? $_POST['paid-after-amount'] : 0.00;
 $paidAfterDays = isset($_POST['paid-after-days']) ? $_POST['paid-after-days'] : 0;
-// echo "<pre>";
-// die(var_dump($chargeType));
-// echo "</pre>";
+
 
 require 'index/index.view.php';
