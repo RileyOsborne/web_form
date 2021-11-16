@@ -34,14 +34,14 @@
         <div class="m-2 row col-10">
           <h6 class="text-muted">Charge title</h6>
           <div class="input-group" role="group">
-            <input type="text" class="form-control" id="charge-title" name="charge-title" placeholder="<?= $chargeTitle; ?>">
+            <input type="text" class="form-control" id="charge-title" name="charge-title" value="<?= $chargeTitle; ?>" placeholder="Title of the charge">
           </div>
         </div>
 
         <div class="m-2 row col-10">
           <h6 class="text-muted">Charge description</h6>
           <div class="input-group" role="group">
-            <textarea class="form-control" id="charge-description" name="charge-description" rows="3" placeholder="<?= $chargeDescription ?>"></textarea>
+            <textarea class="form-control" id="charge-description" name="charge-description" rows="3" value="<?= $chargeDescription ?>" placeholder="Description of the charge"></textarea>
           </div>
         </div>
 
@@ -49,7 +49,7 @@
           <h6 class="text-muted">Charge amount</h6>
           <div class="input-group" role="group">
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control" id="charge-amount" name="charge-amount" placeholder="<?= $chargeAmount ?>">
+            <input type="text" class="form-control" id="charge-amount" name="charge-amount" value="<?= $chargeAmount ?>" placeholder="0.00">
           </div>
         </div>
 
@@ -86,9 +86,9 @@
         <div class="m-3 row col-10">
           <div class="input-group" role="group">
             <span class="input-group-text">$</span>
-            <input type="number" class="form-control" id="paid-in-full-amount" name="paid-in-full-amount" placeholder="<?= $paidInFullAmount ?>">
+            <input type="number" class="form-control" id="paid-in-full-amount" name="paid-in-full-amount" value="<?= $paidInFullAmount ?>" placeholder="0.00">
               <div class="text-muted mx-2 d-flex justify-content-center align-items-center">if paid in full by</div>
-            <input type="number" class="form-control" id="paid-in-full-days" name="paid-in-full-days" placeholder="<?= $paidInFullDays ?>" style="max-width: 4rem;">
+            <input type="number" class="form-control" id="paid-in-full-days" name="paid-in-full-days" value="<?= $paidInFullDays ?>" placeholder="0" style="max-width: 4rem;">
             <span class="input-group-text">days before date</span>
           </div>
         </div>
@@ -107,11 +107,11 @@
         <div class="m-3 row col-10">
           <div class="input-group" role="group">
             <span class="input-group-text">$</span>
-            <input type="number" class="form-control" id="paid-after-amount" name="paid-after-amount" placeholder="<?= $paidAfterAmount ?>">
+            <input type="number" class="form-control" id="paid-after-amount" name="paid-after-amount" value="<?= $paidAfterAmount ?>" placeholder="0.00">
 
             <div class="text-muted mx-2 d-flex justify-content-center align-items-center">if paid after</div>
 
-            <input type="number" class="form-control" id="paid-after-days" name="paid-after-days" placeholder="<?= $paidAfterDays ?>" style="max-width: 4rem;">
+            <input type="number" class="form-control" id="paid-after-days" name="paid-after-days" value="<?= $paidAfterDays ?>" placeholder="0" style="max-width: 4rem;">
             <span class="input-group-text">days or more late</span>
           </div>
         </div>

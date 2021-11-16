@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(() => {
 
-  $("#save").click(function(e){
+  $("#save").click((e) => {
     //prevent form from submitting early
     e.preventDefault();
 
