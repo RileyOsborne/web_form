@@ -3,7 +3,7 @@
 ## Instructions for getting application running
 
 1. Clone the repo
-2. Run `php -S localhost:8000` (or your prefered port)
+2. Run `php -S localhost:8000` (or your prefered port) while in the root directory
 3. Navigate to the `localhost:8000` in your web browser
 
 ## Application use and information
